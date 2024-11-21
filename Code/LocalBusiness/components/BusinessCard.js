@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   },
   rating: {
     fontSize: 14,
-    color: '#777',
+    color: '#007BFF',
     marginVertical: 5,
   },
   description: {
