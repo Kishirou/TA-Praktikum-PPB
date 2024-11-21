@@ -10,10 +10,10 @@ Pada repository github ini, terdapat source code dari aplikasi yang bernama "Loc
 
 Penggunaan API
 ==============
-Untuk menggunakan API, perlu dibuat JSON server dengan perintah npm install -g json-server. Kemudian menjalankan file JSON yang berisi data API dengan json-server --watch APIData.json --port 3000.\
-Untuk image pada API menggunakan link dari https://postimages.org dan mungkin sulit untuk menghubungi website tersebut sehingga gambar mungkin tidak muncul. Jika tidak muncul, perlu menggunakan VPN.\
-Untuk fetching API pada HomeScreen (https://localhost:3000/businesses) dapat diganti dengan IP sendiri jika ingin mengetes pada device eksternal seperti android sehingga menjadi (https://192.168.1.x:3000/businesses).\
-IP lokal dapat dilihat dengan command ipconfig pada cmd.
+- Untuk menggunakan API, perlu dibuat JSON server dengan perintah npm install -g json-server. Kemudian menjalankan file JSON yang berisi data API dengan json-server --watch APIData.json --port 3000.
+- Untuk image pada API menggunakan link dari https://postimages.org dan mungkin sulit untuk menghubungi website tersebut sehingga gambar mungkin tidak muncul. Jika tidak muncul, perlu menggunakan VPN.
+- Untuk fetching API pada HomeScreen (https://localhost:3000/businesses) dapat diganti dengan IP sendiri jika ingin mengetes pada device eksternal seperti android sehingga menjadi (https://192.168.1.x:3000/businesses).
+- IP lokal dapat dilihat dengan command ipconfig pada cmd.
 
 node-modules
 ============
