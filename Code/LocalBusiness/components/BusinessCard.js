@@ -12,8 +12,8 @@ export default function BusinessCard({ business, onPress, onFavorite, isFavorite
       <View style={styles.content}>
         <Text style={styles.name}>{business.name}</Text>
         <Text style={styles.rating}>⭐ {business.rating}</Text>
-        <Text style={styles.description} numberOfLines={2}>
-          {business.description}
+        <Text style={styles.infotext} numberOfLines={2}>
+          {business.address.streetAddress}, {business.address.addressLocality}, {business.address.addressRegion}
         </Text>
       </View>
 
