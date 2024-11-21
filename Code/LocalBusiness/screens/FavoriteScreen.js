@@ -33,7 +33,7 @@ export default function FavoriteScreen({ favorites }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#d8e8fc',
   },
   noFavorites: {
     fontSize: 18,
