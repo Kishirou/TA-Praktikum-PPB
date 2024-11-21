@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
   },
   rating: {
     fontSize: 18,
-    color: '#777',
+    color: '#007BFF',
     marginVertical: 5,
   },
   description: {
