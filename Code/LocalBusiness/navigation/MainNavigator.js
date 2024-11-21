@@ -72,7 +72,7 @@ function FavoriteStackNavigator({ favorites }) {
 }
 
 export default function MainNavigator() {
-  const [favorites, setFavorites] = useState([]); // State to store favorites
+  const [favorites, setFavorites] = useState([]);
 
   return (
     <Tab.Navigator
@@ -80,7 +80,6 @@ export default function MainNavigator() {
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
 
-          // Define icons for each tab
           if (route.name === 'HomeTab') {
             iconName = focused ? 'home' : 'home-outline';
           } else if (route.name === 'FavoritesTab') {
@@ -91,11 +90,10 @@ export default function MainNavigator() {
             iconName = focused ? 'person' : 'person-outline';
           }
 
-          // Return the appropriate icon
           return <Ionicons name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: '#007BFF', // Active icon color
-        tabBarInactiveTintColor: 'gray', // Inactive icon color
+        tabBarActiveTintColor: '#007BFF',
+        tabBarInactiveTintColor: 'gray',
       })}
     >
       <Tab.Screen
