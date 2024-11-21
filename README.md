@@ -10,7 +10,7 @@ Pada repository github ini, terdapat source code dari aplikasi yang bernama "Loc
 
 Penggunaan API
 ==============
-Untuk menggunakan API, perlu dibuat JSON server dengan perintah npm install -g json-server. Kemudian menjalankan file JSON yang berisi data API dengan json-server --watch APIData.json --port 3000.
+Untuk menggunakan API, perlu dibuat JSON server dengan perintah npm install -g json-server. Kemudian menjalankan file JSON yang berisi data API dengan json-server --watch APIData.json --port 3000. Untuk image pada API menggunakan link dari https://postimages.org dan mungkin sulit untuk menghubungi website tersebut sehingga gambar mungkin tidak muncul. Jika tidak muncul, perlu menggunakan VPN.
 
 node-modules
 ============
