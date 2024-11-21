@@ -63,7 +63,7 @@ export default function HomeScreen({ favorites, setFavorites }) {
 const styles = StyleSheet.create({
   container: { 
     flex: 1, 
-    backgroundColor: '#f5f5f5' 
+    backgroundColor: '#d8e8fc' 
   },
   listContent: { 
     padding: 10 
