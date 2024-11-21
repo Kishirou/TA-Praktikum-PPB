@@ -8,6 +8,12 @@ Deskripsi
 =========
 Pada repository github ini, terdapat source code dari aplikasi yang bernama "LocalBusiness". Aplikasi ini dapat menampilkan bisnis-bisnis yang ada di area lokal (Amerika). API yang digunakan adalah API yang menggunakan JSON Server karena kehabisan akses untuk API Yelp sehingga buat sendiri.
 
+Fitur Aplikasi
+==============
+- Tampilan bisnis lokal
+- Fitur favorit, dimana dapat memilih bisnis favorit dan masuk ke dalam page favorit
+- Deskripsi bisnis dengan review
+
 Penggunaan API
 ==============
 - Untuk menggunakan API, perlu dibuat JSON server dengan perintah npm install -g json-server. Kemudian menjalankan file JSON yang berisi data API dengan json-server --watch APIData.json --port 3000.
