@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 3,
     width: '100%',
-    maxWidth: 400, // Limit the card width for larger screens
+    maxWidth: 400,
     alignItems: 'center',
   },
   title: {
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     lineHeight: 24,
-    textAlign: 'justify', // Justifies the description text
+    textAlign: 'justify',
     color: '#555',
     marginBottom: 10,
   },
