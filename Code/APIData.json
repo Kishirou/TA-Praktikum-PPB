@@ -1,0 +1,384 @@
+{
+  "businesses": [
+  {
+    "id": 1,
+    "name": "Coffee House",
+    "rating": 4.5,
+    "owner": "John Doe",
+    "address": {
+      "streetAddress": "123 Main St",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA"
+    },
+    "url": "https://i.postimg.cc/qqW5zVNk/Coffee-House.jpg",
+    "description": "A cozy coffee shop offering a relaxed atmosphere, perfect for working or unwinding with a specialty coffee.",
+    "review": {
+      "reviewUser": "Michael Brown",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.7,
+      "reviewComment": "Great atmosphere and delicious coffee. The staff is super friendly!"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Tech Repair Center",
+    "rating": 4.8,
+    "owner": "Alice Smith",
+    "address": {
+      "streetAddress": "456 Elm St",
+      "addressLocality": "New York",
+      "addressRegion": "NY"
+    },
+    "url": "https://i.postimg.cc/9QdnFkCh/Tech-Repair-Center.jpg",
+    "description": "A reliable tech repair center known for quick service and expert staff.",
+    "review": {
+      "reviewUser": "Sophia Johnson",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.9,
+      "reviewComment": "Quick service and very knowledgeable staff. Highly recommend!"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Book Nook",
+    "rating": 4.2,
+    "owner": "Emma Wilson",
+    "address": {
+      "streetAddress": "789 Oak St",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA"
+    },
+    "url": "https://i.postimg.cc/zXKrK08d/Book-Nook.jpg",
+    "description": "A small bookstore offering a curated selection of rare and popular books across various genres.",
+    "review": {
+      "reviewUser": "Liam Davis",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.0,
+      "reviewComment": "A cozy place with a great selection of books. Could use more seating."
+    }
+  },
+  {
+    "id": 4,
+    "name": "Sunny Side Bakery",
+    "rating": 4.6,
+    "owner": "Chloe Baker",
+    "address": {
+      "streetAddress": "321 Sunset Blvd",
+      "addressLocality": "Miami",
+      "addressRegion": "FL"
+    },
+    "url": "https://i.postimg.cc/vHFRYff5/Sunny-Side-Bakery.jpg",
+    "description": "A delightful bakery offering fresh pastries and bread daily, known for their croissants.",
+    "review": {
+      "reviewUser": "Ethan Parker",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.8,
+      "reviewComment": "Fresh pastries every morning. Their croissants are to die for!"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Green Thumb Garden Supplies",
+    "rating": 4.3,
+    "owner": "Oliver Green",
+    "address": {
+      "streetAddress": "567 Maple St",
+      "addressLocality": "Seattle",
+      "addressRegion": "WA"
+    },
+    "url": "https://i.postimg.cc/rwMvWThm/Green-Thumb-Garden-Supplies.jpg",
+    "description": "A haven for gardening enthusiasts, offering a wide variety of plants and tools.",
+    "review": {
+      "reviewUser": "Amelia Carter",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.4,
+      "reviewComment": "Great selection of plants and gardening tools. Prices are reasonable."
+    }
+  },
+  {
+    "id": 6,
+    "name": "Urban Gym",
+    "rating": 4.7,
+    "owner": "Noah Wilson",
+    "address": {
+      "streetAddress": "101 Fitness Ave",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL"
+    },
+    "url": "https://i.postimg.cc/SxdHfP5G/Urban-Gym.jpg",
+    "description": "A modern gym equipped with state-of-the-art facilities and professional trainers.",
+    "review": {
+      "reviewUser": "Emily Moore",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.6,
+      "reviewComment": "Clean facilities with state-of-the-art equipment. Love the trainers!"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Gadget Hub",
+    "rating": 4.5,
+    "owner": "Lucas Turner",
+    "address": {
+      "streetAddress": "999 Tech Blvd",
+      "addressLocality": "Austin",
+      "addressRegion": "TX"
+    },
+    "url": "https://i.postimg.cc/dV5SyykH/Gadget-Hub.jpg",
+    "description": "A one-stop shop for the latest gadgets and tech accessories at competitive prices.",
+    "review": {
+      "reviewUser": "Sophia King",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.7,
+      "reviewComment": "They have the latest gadgets at competitive prices."
+    }
+  },
+  {
+    "id": 8,
+    "name": "Sweet Tooth Dessert Shop",
+    "rating": 4.9,
+    "owner": "Mia Edwards",
+    "address": {
+      "streetAddress": "222 Sugar Lane",
+      "addressLocality": "Las Vegas",
+      "addressRegion": "NV"
+    },
+    "url": "https://i.postimg.cc/vBVPk2Pk/Sweet-Tooth-Dessert-Shop.jpg",
+    "description": "A dessert lover's paradise, serving an array of mouth-watering sweets and treats.",
+    "review": {
+      "reviewUser": "James Reed",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.9,
+      "reviewComment": "Delicious desserts that always satisfy my sweet tooth!"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Peak Adventure Gear",
+    "rating": 4.4,
+    "owner": "Jack Thompson",
+    "address": {
+      "streetAddress": "678 Adventure Rd",
+      "addressLocality": "Denver",
+      "addressRegion": "CO"
+    },
+    "url": "https://i.postimg.cc/8PKhdB46/Peak-Adventure-Gear.jpg",
+    "description": "The perfect store for adventurers, offering high-quality outdoor and camping gear.",
+    "review": {
+      "reviewUser": "Lily Ward",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.5,
+      "reviewComment": "High-quality outdoor gear. Perfect for hikers and adventurers."
+    }
+  },
+  {
+    "id": 10,
+    "name": "Creative Studio Art Supplies",
+    "rating": 4.3,
+    "owner": "Ella Barnes",
+    "address": {
+      "streetAddress": "111 Canvas St",
+      "addressLocality": "Portland",
+      "addressRegion": "OR"
+    },
+    "url": "https://i.postimg.cc/52DLT4Z9/Creative-Studio-Art-Supplies.jpg",
+    "description": "A hub for artists, offering a wide range of art supplies and tools for creativity.",
+    "review": {
+      "reviewUser": "Benjamin Scott",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.2,
+      "reviewComment": "Wide range of art supplies. A haven for artists!"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Paws & Claws Pet Store",
+    "rating": 4.8,
+    "owner": "Ava Martinez",
+    "address": {
+      "streetAddress": "333 Pet Plaza",
+      "addressLocality": "Phoenix",
+      "addressRegion": "AZ"
+    },
+    "url": "https://i.postimg.cc/k4vS2xDD/Paws-Claws-Pet-Store.jpg",
+    "description": "Your trusted pet store offering high-quality supplies and healthy treats for your furry friends.",
+    "review": {
+      "reviewUser": "Logan Harris",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.9,
+      "reviewComment": "Great selection of pet supplies and healthy treats!"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Vintage Finds Antique Shop",
+    "rating": 4.2,
+    "owner": "Mason Clark",
+    "address": {
+      "streetAddress": "444 Nostalgia Ln",
+      "addressLocality": "Savannah",
+      "addressRegion": "GA"
+    },
+    "url": "https://i.postimg.cc/rsWrXHR0/Vintage-Finds-Antique-Shop.jpg",
+    "description": "A charming antique shop filled with rare and unique treasures for collectors.",
+    "review": {
+      "reviewUser": "Grace White",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.0,
+      "reviewComment": "Unique and charming antiques. Perfect for collectors!"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Healthy Haven Grocery",
+    "rating": 4.6,
+    "owner": "Charlotte Mitchell",
+    "address": {
+      "streetAddress": "555 Organic St",
+      "addressLocality": "San Diego",
+      "addressRegion": "CA"
+    },
+    "url": "https://i.postimg.cc/sfZShMHj/Healthy-Haven-Grocery.jpg",
+    "description": "A grocery store dedicated to fresh, organic, and eco-friendly products.",
+    "review": {
+      "reviewUser": "Henry Young",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.7,
+      "reviewComment": "Fresh organic produce and friendly staff!"
+    }
+  },
+  {
+    "id": 14,
+    "name": "The Fashion Boutique",
+    "rating": 4.7,
+    "owner": "Aiden Perez",
+    "address": {
+      "streetAddress": "777 Glamour Ave",
+      "addressLocality": "Atlanta",
+      "addressRegion": "GA"
+    },
+    "url": "https://i.postimg.cc/02RSd9hp/The-Fashion-Boutique.jpg",
+    "description": "A boutique offering stylish clothing and accessories for every occasion.",
+    "review": {
+      "reviewUser": "Isabella Rivera",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.8,
+      "reviewComment": "Stylish clothes and great customer service!"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Smart Tech Solutions",
+    "rating": 4.9,
+    "owner": "Caleb Lee",
+    "address": {
+      "streetAddress": "888 Innovate Blvd",
+      "addressLocality": "Boston",
+      "addressRegion": "MA"
+    },
+    "url": "https://i.postimg.cc/qMs319dW/Smart-Tech-Solutions.jpg",
+    "description": "Expert solutions for all your technology needs, from software to hardware.",
+    "review": {
+      "reviewUser": "Zoe Walker",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 5.0,
+      "reviewComment": "Exceptional service for all tech needs. Highly skilled team!"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Home Comfort Furniture",
+    "rating": 4.4,
+    "owner": "Lillian Adams",
+    "address": {
+      "streetAddress": "999 Comfort Blvd",
+      "addressLocality": "Charlotte",
+      "addressRegion": "NC"
+    },
+    "url": "https://i.postimg.cc/g0JLkj6P/Home-Comfort-Furniture.jpg",
+    "description": "A furniture store offering stylish and comfortable pieces for every home.",
+    "review": {
+      "reviewUser": "Luke Nelson",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.5,
+      "reviewComment": "High-quality furniture that blends style and comfort."
+    }
+  },
+  {
+    "id": 17,
+    "name": "Taste of Italy Restaurant",
+    "rating": 4.8,
+    "owner": "Evelyn Hall",
+    "address": {
+      "streetAddress": "123 Pasta Lane",
+      "addressLocality": "Orlando",
+      "addressRegion": "FL"
+    },
+    "url": "https://i.postimg.cc/DzMJWhq4/Taste-of-Italy-Restaurant.jpg",
+    "description": "An authentic Italian restaurant serving traditional dishes made with fresh ingredients.",
+    "review": {
+      "reviewUser": "Oliver Hill",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.9,
+      "reviewComment": "Authentic Italian dishes with excellent service."
+    }
+  },
+  {
+    "id": 18,
+    "name": "Bright Minds Academy",
+    "rating": 4.6,
+    "owner": "Hannah Carter",
+    "address": {
+      "streetAddress": "101 Knowledge Dr",
+      "addressLocality": "Houston",
+      "addressRegion": "TX"
+    },
+    "url": "https://i.postimg.cc/26Lqhtwc/Bright-Minds-Academy.jpg",
+    "description": "A learning center offering courses for kids and adults to expand their knowledge.",
+    "review": {
+      "reviewUser": "Eli Collins",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.7,
+      "reviewComment": "Excellent learning environment for kids and adults alike."
+    }
+  },
+  {
+    "id": 19,
+    "name": "Cineplex Cinema",
+    "rating": 4.3,
+    "owner": "Daniel Rogers",
+    "address": {
+      "streetAddress": "456 Movie Blvd",
+      "addressLocality": "Hollywood",
+      "addressRegion": "CA"
+    },
+    "url": "https://i.postimg.cc/0j6xj6ph/Cineplex-Cinema.png",
+    "description": "A modern cinema offering the latest blockbusters and a comfortable viewing experience.",
+    "review": {
+      "reviewUser": "Victoria Evans",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.4,
+      "reviewComment": "Clean theater with comfortable seating. Love their popcorn!"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Peak Wellness Spa",
+    "rating": 4.8,
+    "owner": "Scarlett Bennett",
+    "address": {
+      "streetAddress": "222 Serenity Ave",
+      "addressLocality": "Nashville",
+      "addressRegion": "TN"
+    },
+    "url": "https://i.postimg.cc/pLhddLfw/Peak-Wellness-Spa.jpg",
+    "description": "A serene spa offering relaxing treatments and exceptional service.",
+    "review": {
+      "reviewUser": "Mason Brooks",
+      "reviewUserPhoto": "https://i.postimg.cc/C155YQXM/Kayamori-Ruka-Alt.jpg",
+      "reviewScore": 4.9,
+      "reviewComment": "The best spa experience I've ever had. Highly recommended!"
+    }
+  }
+]
+}
