@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 3,
     width: '100%',
-    maxWidth: 400, // Limit the card width for larger screens
+    maxWidth: 400, 
     alignItems: 'center',
   },
   profileImage: {
@@ -45,8 +45,8 @@ const styles = StyleSheet.create({
     height: 120,
     borderRadius: 60,
     marginBottom: 20,
-    borderWidth: 3, // Adds a border
-    borderColor: '#007BFF', // Border color to match theme
+    borderWidth: 3,
+    borderColor: '#007BFF', 
   },
   name: {
     fontSize: 22,
