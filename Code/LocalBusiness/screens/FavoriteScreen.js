@@ -19,8 +19,8 @@ export default function FavoriteScreen({ favorites }) {
           renderItem={({ item }) => (
             <BusinessCard
               business={item}
-              onPress={() => navigation.navigate('Detail', { business: item })} // Navigate to DetailScreen
-              isFavorite={true} // Mark as favorite
+              onPress={() => navigation.navigate('Detail', { business: item })}
+              isFavorite={true}
             />
           )}
           contentContainerStyle={styles.listContent}
