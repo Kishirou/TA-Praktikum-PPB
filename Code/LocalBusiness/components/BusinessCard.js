@@ -5,10 +5,10 @@ import { FontAwesome } from '@expo/vector-icons';
 export default function BusinessCard({ business, onPress, onFavorite, isFavorite }) {
   return (
     <TouchableOpacity onPress={onPress} style={styles.card}>
-      {/* Business Image */}
+      {/*Business Image*/}
       <Image source={{ uri: business.url }} style={styles.image} />
 
-      {/* Business Content */}
+      {/*Business Content*/}
       <View style={styles.content}>
         <Text style={styles.name}>{business.name}</Text>
         <Text style={styles.rating}>⭐ {business.rating}</Text>
@@ -17,7 +17,7 @@ export default function BusinessCard({ business, onPress, onFavorite, isFavorite
         </Text>
       </View>
 
-      {/* Favorite Button */}
+      {/*Favorite*/}
       <TouchableOpacity
         onPress={(e) => {
           e.stopPropagation(); // Prevent triggering the card's onPress
@@ -74,6 +74,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
     right: 10,
-    zIndex: 10, // Ensure the button is above the card's touchable area
+    zIndex: 10,
   },
 });
