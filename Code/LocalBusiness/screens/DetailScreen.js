@@ -2,14 +2,14 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 
 export default function DetailScreen({ route }) {
-  const { business } = route.params; // Get business data passed via navigation
+  const { business } = route.params;
 
   return (
     <ScrollView style={styles.container}>
-      {/* Business Image */}
+      {/*Business Image*/}
       <Image source={{ uri: business.url }} style={styles.image} />
 
-      {/* Business Details */}
+      {/*Business*/}
       <View style={styles.detailsContainer}>
         <Text style={styles.name}>{business.name}</Text>
         <Text style={styles.rating}>⭐ {business.rating}</Text>
@@ -23,7 +23,7 @@ export default function DetailScreen({ route }) {
         <Text style={styles.infoTitle}>Owner</Text>
         <Text style={styles.infoText}>{business.owner}</Text>
       </View>
-      {/* Review Section */}
+      {/*Review*/}
       <View style={styles.reviewSection}>
         <Text style={styles.sectionTitle}>Review</Text>
         <View style={styles.reviewCard}>
@@ -32,7 +32,9 @@ export default function DetailScreen({ route }) {
             style={styles.reviewerImage}
           />
           <View>
+            
             <Text style={styles.reviewerName}>{business.review?.reviewUser || 'Anonymous'}</Text>
+            <Text style={styles.rating}>⭐ {business.review?.reviewScore}</Text>
             <Text style={styles.reviewComment}>{business.review?.reviewComment || 'No reviews yet.'}</Text>
           </View>
         </View>
@@ -57,7 +59,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    marginTop: -20, // Overlap the image
+    marginTop: -20,
   },
   name: {
     fontSize: 24,
@@ -108,10 +110,12 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   reviewerImage: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 75,
+    height: 75,
+    borderRadius: 45,
     marginRight: 15,
+    borderWidth: 3, 
+    borderColor: '#007BFF',
   },
   reviewerName: {
     fontSize: 16,
