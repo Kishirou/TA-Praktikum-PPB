@@ -6,10 +6,10 @@ export default function DetailScreen({ route }) {
 
   return (
     <ScrollView style={styles.container}>
-      {/*Business Image*/}
+      {/* Business Image */}
       <Image source={{ uri: business.url }} style={styles.image} />
 
-      {/*Business*/}
+      {/* Business Details */}
       <View style={styles.detailsContainer}>
         <Text style={styles.name}>{business.name}</Text>
         <Text style={styles.rating}>⭐ {business.rating}</Text>
@@ -23,7 +23,8 @@ export default function DetailScreen({ route }) {
         <Text style={styles.infoTitle}>Owner</Text>
         <Text style={styles.infoText}>{business.owner}</Text>
       </View>
-      {/*Review*/}
+
+      {/* Review Section */}
       <View style={styles.reviewSection}>
         <Text style={styles.sectionTitle}>Review</Text>
         <View style={styles.reviewCard}>
@@ -31,11 +32,12 @@ export default function DetailScreen({ route }) {
             source={{ uri: business.review?.reviewUserPhoto || 'https://via.placeholder.com/50' }}
             style={styles.reviewerImage}
           />
-          <View>
-            
+          <View style={styles.reviewContent}>
             <Text style={styles.reviewerName}>{business.review?.reviewUser || 'Anonymous'}</Text>
-            <Text style={styles.rating}>⭐ {business.review?.reviewScore}</Text>
-            <Text style={styles.reviewComment}>{business.review?.reviewComment || 'No reviews yet.'}</Text>
+            <Text style={styles.reviewRating}>⭐ {business.review?.reviewScore}</Text>
+            <Text style={styles.reviewComment} numberOfLines={4}>
+              {business.review?.reviewComment || 'No reviews yet.'}
+            </Text>
           </View>
         </View>
       </View>
@@ -117,14 +119,23 @@ const styles = StyleSheet.create({
     borderWidth: 3, 
     borderColor: '#007BFF',
   },
+  reviewContent: {
+    flex: 1,
+  },
   reviewerName: {
     fontSize: 16,
     fontWeight: 'bold',
     color: '#333',
   },
+  reviewRating: {
+    fontSize: 16,
+    color: '#007BFF',
+    marginVertical: 5,
+  },
   reviewComment: {
     fontSize: 14,
     color: '#555',
     marginTop: 5,
+    lineHeight: 20,
   },
 });
