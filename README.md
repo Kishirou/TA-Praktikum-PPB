@@ -20,6 +20,7 @@ Penggunaan API
 - Untuk image pada API menggunakan link dari https://postimages.org dan mungkin sulit untuk menghubungi website tersebut sehingga gambar mungkin tidak muncul. Jika tidak muncul, perlu menggunakan VPN.
 - Untuk fetching API pada HomeScreen (https://localhost:3000/businesses) dapat diganti dengan IP sendiri jika ingin mengetes pada device eksternal seperti android sehingga menjadi (https://192.168.1.x:3000/businesses).
 - IP lokal dapat dilihat dengan command ipconfig pada cmd.
+- Referensi pembuatan data API : https://rapidapi.com/mahmudulhasandev/api/yelp-api2
 
 node-modules
 ============
