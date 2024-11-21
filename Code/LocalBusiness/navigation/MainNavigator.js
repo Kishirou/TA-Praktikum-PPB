@@ -20,7 +20,7 @@ function HomeStackNavigator({ favorites, setFavorites }) {
           <HomeScreen favorites={favorites} setFavorites={setFavorites} />
         )}
         options={{
-          title: 'HOME',
+          title: 'Home',
           headerStyle: { backgroundColor: '#007BFF' },
           headerTintColor: '#fff',
           headerTitleStyle: { fontWeight: 'bold', fontSize: 24 },
@@ -31,7 +31,7 @@ function HomeStackNavigator({ favorites, setFavorites }) {
         name="Detail"
         component={DetailScreen}
         options={{
-          title: 'DETAIL',
+          title: 'Detail',
           headerStyle: { backgroundColor: '#007BFF' },
           headerTintColor: '#fff',
           headerTitleStyle: { fontWeight: 'bold', fontSize: 24 },
@@ -49,7 +49,7 @@ function FavoriteStackNavigator({ favorites }) {
         name="Favorites"
         children={() => <FavoriteScreen favorites={favorites} />}
         options={{
-          title: 'FAVORITES',
+          title: 'Favorites',
           headerStyle: { backgroundColor: '#007BFF' },
           headerTintColor: '#fff',
           headerTitleStyle: { fontWeight: 'bold', fontSize: 24 },
@@ -60,7 +60,7 @@ function FavoriteStackNavigator({ favorites }) {
         name="Detail"
         component={DetailScreen}
         options={{
-          title: 'DETAIL',
+          title: 'Detail',
           headerStyle: { backgroundColor: '#007BFF' },
           headerTintColor: '#fff',
           headerTitleStyle: { fontWeight: 'bold', fontSize: 24 },
