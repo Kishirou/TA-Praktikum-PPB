@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { View, FlatList, StyleSheet, ActivityIndicator } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // Import navigation hook
+import { View, FlatList, StyleSheet, ActivityIndicator, TextInput } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import BusinessCard from '../components/BusinessCard';
 
 export default function HomeScreen({ favorites, setFavorites }) {
   const [businesses, setBusinesses] = useState([]);
-  const [loading, setLoading] = useState(true); 
-  const navigation = useNavigation(); 
+  const [filteredBusinesses, setFilteredBusinesses] = useState([]); 
+  const [searchQuery, setSearchQuery] = useState('');
+  const [loading, setLoading] = useState(true);
+  const navigation = useNavigation();
 
   useEffect(() => {
-    fetch('http://localhost:3000/businesses') 
+    fetch('http://192.168.1.7:3000/businesses')
       .then((response) => response.json())
       .then((data) => {
         setBusinesses(data);
+        setFilteredBusinesses(data);
         setLoading(false);
       })
       .catch((error) => {
@@ -24,9 +27,21 @@ export default function HomeScreen({ favorites, setFavorites }) {
   const toggleFavorite = (business) => {
     setFavorites((prev) =>
       prev.some((fav) => fav.id === business.id)
-        ? prev.filter((fav) => fav.id !== business.id)
+        ? prev.filter((fav) => fav.id !== business.id) 
         : [...prev, business]
     );
+  };
+
+  const Search = (query) => {
+    setSearchQuery(query);
+    if (query.trim() === '') {
+      setFilteredBusinesses(businesses);
+    } else {
+      const filtered = businesses.filter((business) =>
+        business.name.toLowerCase().includes(query.toLowerCase()) 
+      );
+      setFilteredBusinesses(filtered);
+    }
   };
 
   if (loading) {
@@ -39,8 +54,15 @@ export default function HomeScreen({ favorites, setFavorites }) {
 
   return (
     <View style={styles.container}>
+      <TextInput
+        style={styles.searchBar}
+        placeholder="Search businesses..."
+        value={searchQuery}
+        onChangeText={Search} 
+      />
+
       <FlatList
-        data={businesses}
+        data={filteredBusinesses}
         keyExtractor={(item) => item.id.toString()}
         numColumns={2}
         columnWrapperStyle={styles.columnWrapper}
@@ -59,15 +81,24 @@ export default function HomeScreen({ favorites, setFavorites }) {
 }
 
 const styles = StyleSheet.create({
-  container: { 
-    flex: 1, 
-    backgroundColor: '#d8e8fc' 
+  container: {
+    flex: 1,
+    backgroundColor: '#d8e8fc',
   },
-  listContent: { 
-    padding: 10 
+  searchBar: {
+    height: 40,
+    margin: 10,
+    paddingHorizontal: 10,
+    borderRadius: 20,
+    backgroundColor: '#fff',
+    borderColor: '#ddd',
+    borderWidth: 1,
   },
-  columnWrapper: { 
-    justifyContent: 'space-between' 
+  listContent: {
+    padding: 10,
+  },
+  columnWrapper: {
+    justifyContent: 'space-between',
   },
   loadingContainer: {
     flex: 1,
